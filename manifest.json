@@ -1,0 +1,10 @@
+{
+  "domain": "ajax_security_uart",
+  "name": "Ajax Security Sensor",
+  "documentation": "",
+  "dependencies": [],
+  "codeowners": [],
+  "requirements": [
+    "pyserial-asyncio==0.4"
+  ]
+}
