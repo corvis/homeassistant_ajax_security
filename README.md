@@ -1,9 +1,11 @@
 # HomeAssistant AjaxSecurity Bridge
 
-***DISCLAIMER: This component is under active development stage now. There are no any stable release yet, so please do not use it in your installation unless you are not developer who would like to contribute into module***
+***DISCLAIMER: This component is under active development now. There are no any stable release yet, so please do not use it in your installation unless you are developer who would like to contribute into module***
 
 Bridge between [ajax security modules](https://ajax.systems/) and [Home Assistant](https://www.home-assistant.io/).
-The modules connects to the home assistant instance via [UART Bridge](https://ajax.systems/products/uartbridge/) which provides [Jeweller](https://ajax.systems/jeweller/)(native ajax radio protocol) <> UART interface. In order to connect bridge to home assistant USB-UART adaptor is required. Please avoid super low-cost chineese adaptors as they are extreamly unstables.
+The modules connects to the home assistant instance via [UART Bridge](https://ajax.systems/products/uartbridge/) which provides [Jeweller](https://ajax.systems/jeweller/)(native ajax radio protocol) <> UART interface. 
+
+This integration __doesn't use Ajax cloud services__, doesn't require internet connection and doesn't expose any data outside of local network. However it requires special hardware module to interface Ajax wireless protocol, see Required Hardware section below.
 
 Currently supported Ajax products are:
 * [Fire Protect](https://ajax.systems/products/fireprotect/)
@@ -11,7 +13,7 @@ Currently supported Ajax products are:
 ## Required Hardware
 
 * [Ajax UART Bridge](https://ajax.systems/products/uartbridge/), to interface wireless Ajax devices
-* USB-UART adaptor, to connect UART bridge to home assistant server. UART bridge compatible with 3.3v logic.
+* USB-UART adaptor, to connect UART bridge to home assistant server. UART bridge compatible with 3.3v logic. Please avoid super low-cost chineese adaptors as they might be extreamly unstables.
 
 **USB-UART devices known to work fine**
 * Chinees devices built on CP2102 chip
