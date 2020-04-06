@@ -58,6 +58,8 @@ pip install -r ./requirements.txt
 
 Now you could run local home assistant instance like this: `hass`
 
+Documentation which describes UART Bridge protocol is [available here](https://drive.google.com/file/d/1My0iAjZrig5aIq9D1LeddCMkquKD1K7p/view).
+
 ## Credits
 Dmitry Berezovsky
 
