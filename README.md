@@ -39,12 +39,12 @@ TBD
 
 ## Configuration
 
-| Name     | Type         | Default     | Description                              |
-| -------- | ------------ | ----------- | ---------------------------------------- |
-| name     | string       | uart_bridge | Name of the integration module. Must be set to unique value in case you need 2 or more simultaneously connected UART bridges. |
-| port     | string       | required    | Path to TTY devices. May vary depending on USB-UART adaptor and operation system. Check your `/dev/tty*`.<br />**Example**: `/dev/ttyUSB0` |
-| baudrate | positive int | required    | Baudrate of the the serial interface. Currently Ajax Bridge operates on **57600** |
-| timeout  | positive int | 3           | Socket time out in seconds               |
+| Name     | Type         | Default      | Description                              |
+| -------- | ------------ | ------------ | ---------------------------------------- |
+| name     | string       | uart_bridge0 | Name of the integration module. Must be set to unique value in case you need 2 or more simultaneously connected UART bridges. |
+| port     | string       | required     | Path to TTY devices. May vary depending on USB-UART adaptor and operation system. Check your `/dev/tty*`.<br />**Example**: `/dev/ttyUSB0` |
+| baudrate | positive int | 57600        | Baudrate of the the serial interface. Currently Ajax Bridge operates on **57600** |
+| timeout  | positive int | 3            | Socket time out in seconds               |
 
 # Development
 

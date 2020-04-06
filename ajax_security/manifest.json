@@ -1,6 +1,6 @@
 {
-  "domain": "ajax_security_uart",
-  "name": "Ajax Security Sensor",
+  "domain": "ajax_security",
+  "name": "Ajax Security Hub",
   "documentation": "",
   "dependencies": [],
   "codeowners": [],

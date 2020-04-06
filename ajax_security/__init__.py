@@ -21,6 +21,7 @@ from .errors import UnknownMessageError
 _LOGGER = logging.getLogger(__name__)
 
 DEFAULT_BRIDGE = "uart_bridge0"
+DEFAULT_BAUDRATE = 57600
 DOMAIN = "ajax_security"
 
 CONF_BAUDRATE = "baudrate"
@@ -31,10 +32,10 @@ BASE_SCHEMA = vol.Schema({vol.Optional(CONF_NAME, default=DEFAULT_BRIDGE): cv.st
 
 UART_BRIDGE_SCHEMA = SERIAL_SCHEMA = BASE_SCHEMA.extend(
     {
-        vol.Required(CONF_BAUDRATE): cv.positive_int,
+        vol.Optional(CONF_BAUDRATE, default=DEFAULT_BAUDRATE): cv.positive_int,
         vol.Required(CONF_PORT): cv.string,
         vol.Optional(CONF_TIMEOUT, default=3): cv.socket_timeout,
-        vol.Optional(CONF_TYPE, default="uart_bridge"): cv.string,
+        vol.Optional(CONF_TYPE, default=DEFAULT_BRIDGE): cv.string,
     }
 )
 
