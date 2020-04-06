@@ -6,6 +6,17 @@ The modules connects to the home assistant instance via [UART Bridge](https://aj
 Currently supported Ajax products are:
 * [Fire Protect](https://ajax.systems/products/fireprotect/)
 
+## Required Hardware
+
+* [Ajax UART Bridge](https://ajax.systems/products/uartbridge/), to interface wireless Ajax devices
+* USB-UART adaptor, to connect UART bridge to home assistant server. UART bridge compatible with 3.3v logic.
+
+### USB-UART devices known to work fine
+* Chinees devices built on CP2102 chip
+
+### USB-UART devices known to work poorly or doesn't work
+* TBD
+
 ## Instalation
 
 From releases section download the latest realease. Put `ajax_security` folder from archive into `custom_components` folder of your home assistant installation. 
@@ -19,6 +30,10 @@ ajax_security:
 ```
 
 Make sure to edit port to match the real device name.
+
+TBD
+
+## Configuration
 
 TBD
 
