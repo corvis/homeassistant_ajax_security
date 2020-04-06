@@ -13,7 +13,7 @@ Currently supported Ajax products are:
 ## Required Hardware
 
 * [Ajax UART Bridge](https://ajax.systems/products/uartbridge/), to interface wireless Ajax devices
-* USB-UART adaptor, to connect UART bridge to home assistant server. UART bridge compatible with 3.3v logic. Please avoid super low-cost chineese adaptors as they might be extreamly unstables.
+* USB-UART adaptor, to connect UART bridge to home assistant server. Please avoid super low-cost chineese adaptors as they might be extreamly unstables.
 
 **USB-UART devices known to work fine**
 * Chinees devices built on CP2102 chip
