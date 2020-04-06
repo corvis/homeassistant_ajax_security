@@ -11,10 +11,10 @@ Currently supported Ajax products are:
 * [Ajax UART Bridge](https://ajax.systems/products/uartbridge/), to interface wireless Ajax devices
 * USB-UART adaptor, to connect UART bridge to home assistant server. UART bridge compatible with 3.3v logic.
 
-### USB-UART devices known to work fine
+**USB-UART devices known to work fine**
 * Chinees devices built on CP2102 chip
 
-### USB-UART devices known to work poorly or doesn't work
+**USB-UART devices known to work poorly or doesn't work**
 * TBD
 
 ## Instalation
@@ -35,7 +35,12 @@ TBD
 
 ## Configuration
 
-TBD
+| Name     | Type         | Default     | Description                              |
+| -------- | ------------ | ----------- | ---------------------------------------- |
+| name     | string       | uart_bridge | Name of the integration module. Must be set to unique value in case you need 2 or more simultaneously connected UART bridges. |
+| port     | string       | required    | Path to TTY devices. May vary depending on USB-UART adaptor and operation system. Check your `/dev/tty*`.<br />**Example**: `/dev/ttyUSB0` |
+| baudrate | positive int | required    | Baudrate of the the serial interface. Currently Ajax Bridge operates on **57600** |
+| timeout  | positive int | 3           | Socket time out in seconds               |
 
 # Development
 
