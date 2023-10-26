@@ -1,2 +1,2 @@
-homeassistant==0.98.0
+homeassistant==2023.9.0
 pyserial-asyncio==0.4
